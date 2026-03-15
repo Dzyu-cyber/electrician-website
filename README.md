@@ -1,20 +1,66 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# VoltFix Electrical Services Website ⚡
 
-# Run and deploy your AI Studio app
+This is a polished electrician website built with React + Vite + Tailwind. It’s designed to be easy to customize and deploy quickly for small electrical businesses.
 
-This contains everything you need to run your app locally.
+👉 Live demo: https://electrician-website-kappa.vercel.app/
 
-View your app in AI Studio: https://ai.studio/apps/7381857c-57fc-436c-b95d-57d21c8d29c4
+![Homepage screenshot](src/assets/escreenshot.png)
 
-## Run Locally
+---
 
-**Prerequisites:**  Node.js
+## ✨ What You Get
 
+✅ **Modern responsive site** — works great on mobile, tablet, and desktop.
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+✅ **Clear navigation** — organized into:
+- Home (hero section + service highlights)
+- Services (detailed service cards)
+- About (company story and benefits)
+- Contact (call-to-action + contact info)
+
+✅ **Easy content updates** — just edit text and image paths in the React files.
+
+✅ **Fast performance** — optimized for quick page loads.
+
+---
+
+## 🔧 How to Customize (No build needed for content updates)
+
+Edit page content in these files:
+- `src/pages/Home.tsx`
+- `src/pages/About.tsx`
+- `src/pages/Services.tsx`
+- `src/pages/Contact.tsx`
+
+Content changes show instantly when the site is running.
+
+---
+
+## 🚀 Run Locally
+
+**Prerequisites:** Node.js
+
+```bash
+npm install
+npm run dev
+```
+
+Then open the local URL shown in the terminal (usually `http://localhost:5173`).
+
+---
+
+## 📦 Deploy Live
+
+When you’re ready to publish, deploy the generated `dist/` folder to any static host (Vercel, Netlify, GitHub Pages, Azure, etc.).
+
+---
+
+## 💬 Want New Features?
+
+If you want help adding things like:
+- appointment booking / contact form backend
+- newsletter signup
+- live chat
+- reviews or testimonials system
+
+Just ask and I can guide you or implement it for you.
