@@ -4,7 +4,7 @@ This is a polished electrician website built with React + Vite + Tailwind. It’
 
 👉 Live demo: https://electrician-website-kappa.vercel.app/
 
-![Homepage screenshot](src/assets/escreenshot.png)
+![Homepage screenshot](./src/assets/escreenshot.png)
 
 ---
 
