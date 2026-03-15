@@ -1,0 +1,7 @@
+{
+  "name": "VoltFix Electrical Services",
+  "description": "Professional, licensed, and insured electrical services for residential and commercial properties. Available 24/7 for emergencies.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
