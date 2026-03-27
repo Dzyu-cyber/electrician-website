@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { Phone, Menu, X, Facebook, Twitter, Instagram, Linkedin, Mail, MapPin, Clock } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import logo from '../assets/Gemini_Generated_Image_fpw9i6fpw9i6fpw9-removebg-preview.png';
+import { WhatsAppWidget } from './WhatsAppWidget';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -169,6 +170,7 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <div className="min-h-screen flex flex-col bg-slate-50">
       <Navbar />
+      <WhatsAppWidget />
       <main className="flex-1">
         {children}
       </main>
