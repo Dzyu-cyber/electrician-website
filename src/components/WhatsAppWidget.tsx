@@ -2,7 +2,7 @@ import React from 'react';
 
 export const WhatsAppWidget = () => {
   return (
-    <div className="fixed top-[18vh] right-6 z-50 flex items-center gap-3 group">
+    <div className="fixed bottom-6 md:bottom-auto md:top-[18vh] right-6 z-50 flex items-center gap-3 group">
       {/* Tooltip */}
       <div className="relative bg-white text-slate-800 font-semibold py-2 px-4 rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.15)] flex items-center transition-transform duration-300 group-hover:-translate-y-1">
         WhatsApp Us! 😊
