@@ -59,7 +59,7 @@ const Services = () => {
       {/* Header */}
       <div className="mb-16">
         <h2 className="text-4xl md:text-5xl font-black text-slate-900 leading-tight tracking-tight mb-4">
-          Professional Electrical <span className="text-blue-600">Solutions</span>
+          Professional <span className="text-orange-500">Electrical Solutions</span>
         </h2>
         <p className="text-lg text-slate-600 max-w-2xl">
           Safe, reliable, and modern electrical services for residential and commercial properties. Our certified technicians ensure your peace of mind with every connection.
@@ -76,11 +76,11 @@ const Services = () => {
             viewport={{ once: true }}
             className={`flex flex-col lg:flex-row gap-12 bg-white rounded-3xl overflow-hidden shadow-sm border border-slate-100 ${service.reverse ? 'lg:flex-row-reverse' : ''}`}
           >
-            <div className="lg:w-1/2 h-80 lg:h-auto">
+            <div className="lg:w-1/2 h-80 lg:h-[400px]">
               <img src={service.img} alt={service.title} className="h-full w-full object-cover" referrerPolicy="no-referrer" />
             </div>
             <div className="lg:w-1/2 p-8 lg:p-12 flex flex-col justify-center">
-              <div className="flex items-center gap-2 mb-4 text-blue-600">
+              <div className="flex items-center gap-2 mb-4 text-orange-500">
                 {service.icon}
                 <span className="text-xs font-bold uppercase tracking-widest">{service.tag}</span>
               </div>
@@ -94,7 +94,7 @@ const Services = () => {
                   </div>
                 ))}
               </div>
-              <button className="w-fit bg-blue-600 text-white px-10 py-4 rounded-xl font-bold hover:shadow-xl transition-all hover:bg-blue-700">
+              <button className="w-fit bg-orange-500 text-white px-10 py-4 rounded-xl font-bold hover:shadow-xl transition-all hover:bg-orange-600">
                 {service.btnText}
               </button>
             </div>
@@ -112,7 +112,7 @@ const Services = () => {
             viewport={{ once: true }}
             className="bg-white p-10 rounded-3xl shadow-sm border border-slate-100"
           >
-            <div className="p-4 bg-blue-50 rounded-2xl w-fit mb-8 text-blue-600">
+            <div className="p-4 bg-orange-50 rounded-2xl w-fit mb-8 text-orange-500">
               {service.icon}
             </div>
             <h3 className="text-2xl font-bold mb-4 text-slate-900">{service.title}</h3>
@@ -125,7 +125,7 @@ const Services = () => {
                 </li>
               ))}
             </ul>
-            <button className="w-full border-2 border-blue-600 text-blue-600 font-bold py-4 rounded-xl hover:bg-blue-600 hover:text-white transition-all">
+            <button className="w-full border-2 border-orange-500 text-orange-500 font-bold py-4 rounded-xl hover:bg-orange-500 hover:text-white transition-all">
               {service.btnText}
             </button>
           </motion.section>
@@ -137,26 +137,26 @@ const Services = () => {
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        className="bg-orange-600 text-white rounded-3xl p-8 md:p-16 shadow-2xl flex flex-col md:flex-row items-center justify-between gap-12"
+        className="bg-orange-500 text-black rounded-3xl p-8 md:p-16 shadow-2xl flex flex-col md:flex-row items-center justify-between gap-12"
       >
         <div className="max-w-xl">
-          <div className="flex items-center gap-2 mb-6 bg-white/20 w-fit px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-widest">
+          <div className="flex items-center gap-2 mb-6 bg-white/40 w-fit px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-widest">
             <AlertTriangle className="h-4 w-4 animate-pulse" /> 24/7 Response
           </div>
           <h2 className="text-4xl md:text-5xl font-black mb-6 tracking-tight">Emergency Electrical Services</h2>
-          <p className="text-white/90 text-xl mb-8 leading-relaxed">Smoke coming from outlets? Burning smell? Total power loss? Our emergency electricians are on standby 24/7 to keep your family safe.</p>
+          <p className="text-black/80 text-xl mb-8 leading-relaxed">Smoke coming from outlets? Burning smell? Total power loss? Our emergency electricians are on standby 24/7 to keep your family safe.</p>
           <div className="flex flex-wrap gap-4 text-sm font-bold">
-            <span className="bg-white/10 px-5 py-2.5 rounded-xl">Rapid Response</span>
-            <span className="bg-white/10 px-5 py-2.5 rounded-xl">Fully Equipped Vans</span>
-            <span className="bg-white/10 px-5 py-2.5 rounded-xl">All Times & Days</span>
+            <span className="bg-white/40 px-5 py-2.5 rounded-xl">Rapid Response</span>
+            <span className="bg-white/40 px-5 py-2.5 rounded-xl">Fully Equipped Vans</span>
+            <span className="bg-white/40 px-5 py-2.5 rounded-xl">All Times & Days</span>
           </div>
         </div>
         <div className="flex flex-col gap-4 min-w-[240px] w-full md:w-auto">
-          <a href="tel:+15551234567" className="bg-white text-orange-600 text-center px-10 py-5 rounded-2xl font-black text-2xl hover:scale-105 transition-transform flex items-center justify-center gap-4 shadow-xl">
+          <a href="tel:+15551234567" className="bg-white text-black text-center px-10 py-5 rounded-2xl font-black text-2xl hover:scale-105 transition-transform flex items-center justify-center gap-4 shadow-xl border border-black/10">
             <Phone className="h-7 w-7" />
             Call Now
           </a>
-          <p className="text-center text-sm font-medium text-white/80">Average response time: 45 mins</p>
+          <p className="text-center text-sm font-medium text-black/70">Average response time: 45 mins</p>
         </div>
       </motion.section>
     </div>

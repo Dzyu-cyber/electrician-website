@@ -58,21 +58,21 @@ const Home = () => {
               transition={{ duration: 0.6 }}
               className="flex flex-1 flex-col gap-8"
             >
-              <div className="inline-flex w-fit items-center gap-2 rounded-full bg-blue-50 px-3 py-1 text-xs font-bold uppercase tracking-wider text-blue-600">
+              <div className="inline-flex w-fit items-center gap-2 rounded-full bg-orange-50 px-3 py-1 text-xs font-bold uppercase tracking-wider text-orange-600">
                 <CheckCircle2 className="h-4 w-4" />
                 Licensed & Insured Electricians
               </div>
               <h1 className="text-5xl font-black leading-tight tracking-tight text-slate-900 md:text-6xl lg:text-7xl">
-                Professional <span className="text-blue-600">Electrical Services</span> You Can Trust
+                Expert <span className="text-orange-500">Electrical Services</span> for Your Home &amp; Business
               </h1>
               <p className="max-w-xl text-lg text-slate-600">
                 Expert electrical solutions for residential and commercial properties. Licensed electricians providing safe, reliable, and affordable services 24/7.
               </p>
               <div className="flex flex-wrap gap-4">
-                <button className="flex h-14 min-w-[180px] items-center justify-center rounded-xl bg-blue-600 text-lg font-bold text-white shadow-xl shadow-blue-600/20 transition-all hover:bg-blue-700">
+                <button className="flex h-14 min-w-[180px] items-center justify-center rounded-xl bg-orange-500 text-lg font-bold text-black shadow-xl shadow-orange-500/20 transition-all hover:bg-orange-600">
                   Call Now
                 </button>
-                <button className="flex h-14 min-w-[180px] items-center justify-center rounded-xl border-2 border-slate-200 bg-transparent text-lg font-bold text-slate-900 transition-all hover:bg-slate-50">
+                <button className="flex h-14 min-w-[180px] items-center justify-center rounded-xl border-2 border-slate-200 bg-transparent text-lg font-bold text-slate-900 shadow-lg transition-all hover:bg-slate-50 hover:shadow-xl">
                   Get a Free Quote
                 </button>
               </div>
@@ -91,7 +91,7 @@ const Home = () => {
                   referrerPolicy="no-referrer"
                 />
               </div>
-              <div className="absolute -bottom-6 -left-6 flex items-center gap-4 rounded-2xl bg-orange-500 p-6 text-white shadow-xl">
+              <div className="absolute -bottom-6 -left-6 flex items-center gap-4 rounded-2xl bg-orange-500 p-6 text-black shadow-xl">
                 <ShieldAlert className="h-10 w-10" />
                 <div>
                   <p className="text-xs font-bold uppercase tracking-widest opacity-80">Emergency Service</p>
@@ -118,9 +118,9 @@ const Home = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
-                className="group rounded-2xl border border-slate-200 bg-white p-8 transition-all hover:border-blue-600 hover:shadow-xl"
+                className="group rounded-2xl border border-slate-200 bg-white p-8 transition-all hover:border-orange-500 hover:shadow-[0_4px_20px_rgba(249,115,22,0.15)]"
               >
-                <div className="mb-6 inline-flex h-14 w-14 items-center justify-center rounded-xl bg-blue-50 text-blue-600 transition-colors group-hover:bg-blue-600 group-hover:text-white">
+                <div className="mb-6 inline-flex h-14 w-14 items-center justify-center rounded-xl bg-orange-50 text-orange-500 transition-colors group-hover:bg-orange-500 group-hover:text-black">
                   {service.icon}
                 </div>
                 <h3 className="mb-3 text-xl font-bold text-slate-900">{service.title}</h3>
@@ -141,7 +141,7 @@ const Home = () => {
               <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
                 {whyChooseUs.map((item, i) => (
                   <div key={i} className="flex items-start gap-4">
-                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-blue-600 text-white">
+                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-orange-500 text-black">
                       {React.cloneElement(item.icon as React.ReactElement, { className: 'h-5 w-5' })}
                     </div>
                     <div>
@@ -208,12 +208,12 @@ const Home = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-blue-600 py-16 text-white">
+      <section className="bg-orange-500 py-16 text-black">
         <div className="mx-auto max-w-7xl px-6 text-center">
           <h2 className="mb-4 text-4xl font-black">Need an Electrician Today?</h2>
-          <p className="mb-10 text-xl text-white/80">Serving Austin, Dallas, and surrounding areas with 24/7 availability.</p>
+          <p className="mb-10 text-xl text-black/80">Serving Austin, Dallas, and surrounding areas with 24/7 availability.</p>
           <div className="flex flex-wrap justify-center gap-6">
-            <button className="flex h-14 min-w-[200px] items-center justify-center gap-3 rounded-xl bg-white px-8 text-lg font-bold text-blue-600 transition-transform hover:scale-105">
+            <button className="flex h-14 min-w-[200px] items-center justify-center gap-3 rounded-xl bg-white px-8 text-lg font-bold text-black transition-transform hover:scale-105">
               <Phone className="h-5 w-5" />
               Call Now
             </button>
@@ -229,29 +229,29 @@ const Home = () => {
       <section className="py-20 bg-white" id="contact">
         <div className="mx-auto max-w-7xl px-6">
           <div className="grid grid-cols-1 gap-12 lg:grid-cols-2">
-            <div className="rounded-3xl bg-slate-900 p-8 text-white lg:p-12">
+            <div className="rounded-3xl bg-orange-500 p-8 text-black lg:p-12">
               <h3 className="mb-8 text-3xl font-bold">Contact Information</h3>
               <div className="space-y-6">
                 <div className="flex items-center gap-4">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-blue-600/20 text-blue-500">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-white/40 text-black">
                     <MapPin className="h-6 w-6" />
                   </div>
                   <p className="text-lg">123 Main St, Austin, TX | 456 Commerce Blvd, Dallas, TX</p>
                 </div>
                 <div className="flex items-center gap-4">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-blue-600/20 text-blue-500">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-white/40 text-black">
                     <Phone className="h-6 w-6" />
                   </div>
                   <p className="text-lg">(512) 555-0199</p>
                 </div>
                 <div className="flex items-center gap-4">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-blue-600/20 text-blue-500">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-white/40 text-black">
                     <Mail className="h-6 w-6" />
                   </div>
                   <p className="text-lg">support@voltfix.com</p>
                 </div>
                 <div className="flex items-center gap-4">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-blue-600/20 text-blue-500">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-white/40 text-black">
                     <Clock className="h-6 w-6" />
                   </div>
                   <p className="text-lg">Mon-Sun: 24/7 Availability</p>
@@ -267,19 +267,17 @@ const Home = () => {
               </div>
             </div>
             <div className="h-full min-h-[400px] overflow-hidden rounded-3xl bg-slate-100 relative">
-               {/* Placeholder for Map */}
-               <div className="absolute inset-0 bg-slate-200 flex items-center justify-center">
-                  <div className="text-center p-8">
-                    <MapPin className="h-12 w-12 text-blue-600 mx-auto mb-4" />
-                    <p className="font-bold text-slate-900">Interactive Map View</p>
-                    <p className="text-sm text-slate-500">Serving Austin & Dallas Region</p>
-                  </div>
-               </div>
-               <img 
-                src="https://images.unsplash.com/photo-1549599440-e0ed3d56a21a?auto=format&fit=crop&q=80&w=1000" 
-                className="h-full w-full object-cover opacity-50" 
-                referrerPolicy="no-referrer"
-               />
+               {/* Placeholder for Map replaced with Google Maps iframe */}
+               <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d110940.83597022216!2d-97.80164843075249!3d30.307982855191594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644b599a0cc032f%3A0x5d9b464bd469d57a!2sAustin%2C%20TX%2C%20USA!5e0!3m2!1sen!2s!4v1709664654921!5m2!1sen!2s"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0, position: 'absolute', inset: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Random Electrician Location Map"
+               ></iframe>
             </div>
           </div>
         </div>

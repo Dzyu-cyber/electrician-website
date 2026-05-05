@@ -147,7 +147,7 @@ const Contact = () => {
                 rows={5}
               ></textarea>
             </div>
-            <button className="w-full bg-blue-600 text-white font-bold py-5 rounded-2xl shadow-xl hover:bg-blue-700 transition-all flex items-center justify-center gap-3 text-xl">
+            <button className="w-full bg-orange-500 text-white font-bold py-5 rounded-2xl shadow-xl hover:bg-orange-600 transition-all flex items-center justify-center gap-3 text-xl">
               <Send className="h-6 w-6" />
               Send Request
             </button>
@@ -159,7 +159,7 @@ const Contact = () => {
       <div className="w-full h-[500px] mt-12 relative overflow-hidden">
         <div className="absolute inset-0 bg-slate-200 flex items-center justify-center">
           <div className="text-center z-20 bg-white/90 backdrop-blur p-8 rounded-3xl shadow-2xl border border-white">
-            <div className="bg-blue-600 p-4 rounded-full text-white w-fit mx-auto mb-4 shadow-lg">
+            <div className="bg-orange-500 p-4 rounded-full text-white w-fit mx-auto mb-4 shadow-lg">
               <MapPin className="h-8 w-8" />
             </div>
             <h4 className="text-2xl font-black text-slate-900 mb-2">VoltFix Headquarters</h4>

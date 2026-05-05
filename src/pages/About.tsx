@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { ShieldCheck, Users, Zap, Clock, Award, Construction, CheckCircle2 } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const About = () => {
   const stats = [
@@ -15,19 +16,19 @@ const About = () => {
       name: 'Marcus Thorne',
       role: 'Founder & Master Electrician',
       desc: 'With 20 years in the field, Marcus leads the technical vision of VoltFix.',
-      img: 'https://picsum.photos/seed/marcus/400/500'
+      img: 'https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&q=80&w=400&h=500'
     },
     {
       name: 'Sarah Jenkins',
       role: 'Residential Project Lead',
       desc: 'Sarah specializes in smart home integration and sustainable lighting.',
-      img: 'https://picsum.photos/seed/sarah/400/500'
+      img: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=400&h=500'
     },
     {
       name: 'David Chen',
       role: 'Lead Industrial Technician',
       desc: 'Our expert for large-scale industrial wiring and power maintenance.',
-      img: 'https://picsum.photos/seed/david/400/500'
+      img: 'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&q=80&w=400&h=500'
     }
   ];
 
@@ -76,7 +77,7 @@ const About = () => {
         <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 py-16 px-6">
           {stats.map((stat, i) => (
             <div key={i} className="text-center">
-              <p className="text-blue-600 text-5xl font-black mb-2">{stat.value}</p>
+              <p className="text-orange-500 text-5xl font-black mb-2">{stat.value}</p>
               <p className="text-slate-500 text-sm font-bold uppercase tracking-widest">{stat.label}</p>
             </div>
           ))}
@@ -101,9 +102,9 @@ const About = () => {
               Our journey began with a single van and a commitment to never cut corners. Today, we manage complex industrial installations and residential emergencies with the same level of precision.
             </p>
           </div>
-          <div className="bg-blue-50 border-l-4 border-blue-600 p-10 rounded-r-2xl">
+          <div className="bg-orange-50 border-l-4 border-orange-500 p-10 rounded-r-2xl">
             <h4 className="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-3">
-              <ShieldCheck className="text-blue-600 h-7 w-7" />
+              <ShieldCheck className="text-orange-500 h-7 w-7" />
               Our Mission
             </h4>
             <p className="text-slate-700 text-lg italic leading-relaxed">
@@ -160,13 +161,13 @@ const About = () => {
                   <img 
                     src={member.img} 
                     alt={member.name} 
-                    className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105"
+                    className="w-full h-full object-cover object-top grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105"
                     referrerPolicy="no-referrer"
                   />
                 </div>
                 <div className="p-8">
                   <h4 className="text-2xl font-bold text-slate-900 mb-1">{member.name}</h4>
-                  <p className="text-blue-600 font-bold text-sm mb-4">{member.role}</p>
+                  <p className="text-orange-500 font-bold text-sm mb-4">{member.role}</p>
                   <p className="text-slate-500 leading-relaxed">{member.desc}</p>
                 </div>
               </motion.div>
@@ -180,30 +181,30 @@ const About = () => {
         <div className="text-center mb-16">
           <h3 className="text-2xl font-bold text-slate-900">Trusted & Certified By</h3>
         </div>
-        <div className="flex flex-wrap justify-center items-center gap-16 opacity-40 grayscale hover:grayscale-0 transition-all duration-500">
+        <div className="flex flex-wrap justify-center items-center gap-16 opacity-80 grayscale hover:grayscale-0 transition-all duration-500">
           {certifications.map((cert, i) => (
             <div key={i} className="flex items-center gap-3">
-              <div className="text-slate-400">
+              <div className="text-slate-600">
                 {React.cloneElement(cert.icon as React.ReactElement, { className: 'h-10 w-10' })}
               </div>
-              <span className="font-black text-slate-400 text-2xl italic tracking-tighter">{cert.label}</span>
+              <span className="font-black text-slate-600 text-2xl italic tracking-tighter">{cert.label}</span>
             </div>
           ))}
         </div>
       </section>
 
       {/* CTA */}
-      <section className="bg-blue-600 py-20 px-6">
+      <section className="bg-orange-500 py-20 px-6 mb-32">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-black text-white mb-8">Need expert electrical help today?</h2>
-          <p className="text-white/80 text-xl mb-12">Whether it's a small repair or a massive installation, we bring the same level of safety and excellence.</p>
+          <h2 className="text-4xl md:text-5xl font-black text-black mb-8">Need expert electrical help today?</h2>
+          <p className="text-black/80 text-xl mb-12">Whether it's a small repair or a massive installation, we bring the same level of safety and excellence.</p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <button className="bg-orange-500 text-white px-10 py-5 rounded-2xl font-bold hover:bg-orange-600 transition-all text-xl shadow-xl">
+            <Link to="/contact" className="bg-white text-black px-10 py-5 rounded-2xl font-bold hover:bg-slate-100 transition-all text-xl shadow-xl">
               Schedule a Visit
-            </button>
-            <button className="bg-white text-blue-600 px-10 py-5 rounded-2xl font-bold hover:bg-slate-100 transition-all text-xl shadow-xl">
+            </Link>
+            <a href="tel:+15551234567" className="bg-white text-black px-10 py-5 rounded-2xl font-bold hover:bg-slate-100 transition-all text-xl shadow-xl">
               Call (555) VOLT-FIX
-            </button>
+            </a>
           </div>
         </div>
       </section>
